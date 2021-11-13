@@ -33,4 +33,10 @@ def display():
     print("-End-")
 
 gradepercent()
+if grdpercent < 65:
+        print("Invalid input. Please enter a valid grade percentage.")
+        gradepercent()
+elif grdpercent > 100:
+        print("Invalid input. Please enter a valid grade percentage.")
+        gradepercent()
 display()
