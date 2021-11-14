@@ -32,11 +32,26 @@ def gradepercent():
 def display():
     print("-End-")
 
-gradepercent()
-if grdpercent < 65:
+def grdstatus():
+     global grdstatus
+     grdstatus = input("Enter grade status (Inc, W, D): ")
+     if grdstatus == "Inc":
+        print("Your outputs in this subject are INCOMPLETE.")
+     elif grdstatus == "W":
+        print("Your status in this subject is WITHDRAWN.")
+     else: 
+        print("Your status in this subject is DROPPED.")
+
+userinput= input("Type [g] to check the equivalent of your grade percent and [s] to check your status in a subject.")
+if userinput == "g":
+    gradepercent()
+    if grdpercent < 65:
         print("Invalid input. Please enter a valid grade percentage.")
         gradepercent()
-elif grdpercent > 100:
+    elif grdpercent > 100:
         print("Invalid input. Please enter a valid grade percentage.")
         gradepercent()
+else:
+    grdstatus()
+
 display()
