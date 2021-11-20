@@ -7,7 +7,7 @@
 
 def gradepercent():
     global grdpercent
-    grdpercent = int(input("Enter grade percentage: "))
+    grdpercent = float(input("Enter grade percentage: "))
     if grdpercent <= 100 and grdpercent >= 97:
         print("Mark: 1.00 - Excellent!")
     elif grdpercent < 97 and grdpercent >= 94:
@@ -42,7 +42,7 @@ def grdstatus():
      else: 
         print("Your status in this subject is DROPPED.")
 
-userinput= input("Type [g] to check the equivalent of your grade percent and [s] to check your status in a subject.")
+userinput= input("Type [g] to check the equivalent of your grade percent and [s] to check your status in a subject: ")
 if userinput == "g":
     gradepercent()
     if grdpercent < 65:
