@@ -3,9 +3,9 @@
 # Display the lowest number
 import time
 def inputnumber():
-    firstNum = int(input("Enter first number: "))
-    secondNum = int(input("Enter second number: "))
-    thirdNum = int(input("Enter third number: "))
+    firstNum = float(input("Enter first number: "))
+    secondNum = float(input("Enter second number: "))
+    thirdNum = float(input("Enter third number: "))
     if firstNum < secondNum and firstNum < thirdNum:
         time.sleep(2)
         print(f"The lowest number among the three is {firstNum}. ")
